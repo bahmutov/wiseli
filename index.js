@@ -42,3 +42,7 @@ screen.key(['escape', 'q', 'C-c'], function(ch, key) {
 topOutput.focus()
 screen.render()
 
+setTimeout(function () {
+  bottomOutput.setText('new bottom text')
+  screen.render()
+}, 2000)
