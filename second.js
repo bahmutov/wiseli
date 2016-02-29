@@ -24,14 +24,12 @@ const topOutput = blessed.box({
 })
 
 const npmOutput = blessed.log({
-  content: 'bottom output',
-  label: 'bottom',
+  label: 'NPM output',
   left: 0,
   top: '50%-1',
   border: 'line',
   keys: true,
   style: {
-    scrollbar: true,
     width: '100%',
     height: '50%'
   }
