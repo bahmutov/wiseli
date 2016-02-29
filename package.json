@@ -10,15 +10,19 @@
   "preferGlobal": true,
   "dependencies": {
     "chalk": "1.1.1",
+    "cross-spawn-async": "2.1.9",
     "manpm": "1.10.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "pre-git": "3.4.0"
+  },
   "files": [
     "index.js",
     "images/npm-and-manpm.png"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "commit-wizard"
   },
   "repository": {
     "type": "git",
@@ -36,5 +40,14 @@
   "bugs": {
     "url": "https://github.com/bahmutov/wiseli/issues"
   },
-  "homepage": "https://github.com/bahmutov/wiseli#readme"
+  "homepage": "https://github.com/bahmutov/wiseli#readme",
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  }
 }
