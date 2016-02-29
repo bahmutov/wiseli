@@ -4,6 +4,7 @@
 
 [![NPM][wiseli-icon] ][wiseli-url]
 
+[![Build status][wiseli-ci-image] ][wiseli-ci-url]
 [![semantic-release][semantic-image] ][semantic-url]
 
 ## Install

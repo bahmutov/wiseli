@@ -1,7 +1,7 @@
 {
   "name": "wiseli",
-  "version": "1.0.0",
   "description": "Read repo's example while installing it with NPM",
+  "version": "0.0.0-semantic-release",
   "main": "index.js",
   "bin": {
     "wiseli": "index.js",
@@ -14,7 +14,8 @@
     "manpm": "1.10.4"
   },
   "devDependencies": {
-    "pre-git": "3.4.0"
+    "pre-git": "3.4.0",
+    "semantic-release": "^4.3.5"
   },
   "files": [
     "index.js",
@@ -22,11 +23,13 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "commit-wizard"
+    "commit": "commit-wizard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/wiseli.git"
+    "url": "https://github.com/bahmutov/wiseli.git"
   },
   "keywords": [
     "npm",
