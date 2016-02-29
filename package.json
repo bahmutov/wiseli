@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "Read repo's example while installing it with NPM",
   "main": "index.js",
+  "bin": {
+    "wiseli": "index.js",
+    "wisely": "index.js"
+  },
+  "preferGlobal": true,
   "dependencies": {
-    "chalk": "1.1.1"
+    "chalk": "1.1.1",
+    "manpm": "1.10.4"
   },
   "devDependencies": {},
   "scripts": {

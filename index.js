@@ -1,6 +1,5 @@
-/*
-Parsing CLI arguments
-*/
+#!/usr/bin/env node
+
 function findModuleToInstall() {
   var found
   process.argv.slice(2).forEach(function (arg) {
@@ -91,7 +90,7 @@ screen.render()
 }())
 
 ;(function () {
-  const proc = spawn('manpm', [name, 'example'])
+  const proc = spawn(__dirname + '/node_modules/.bin/manpm', [name, 'example'])
   proc.stdout.on('data', (data) => {
     manpmOutput.add(data.toString())
   })
