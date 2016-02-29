@@ -9,7 +9,8 @@ function findModuleToInstall() {
       arg !== '--save' &&
       arg !== '--save-dev' &&
       arg !== '-S' &&
-      arg !== '-D') {
+      arg !== '-D' &&
+      arg !== '-g') {
       found = arg
     }
   })
