@@ -22,7 +22,8 @@ section from the readme is at the bottom.
 
 ![example run](images/install-and-example.png)
 
-Implemented using [manpm](https://github.com/bahmutov/manpm)
+Implemented using [manpm](https://github.com/bahmutov/manpm) on top of 
+[blessed](https://github.com/chjj/blessed) and inspired by [gifi](https://github.com/vdemedes/gifi)
 
 ### Small print
 
