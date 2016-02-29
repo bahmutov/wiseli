@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "blessed": "0.1.81"
+    "blessed": "0.1.81",
+    "cross-spawn-async": "2.1.9"
   }
 }
