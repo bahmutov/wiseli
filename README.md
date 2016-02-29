@@ -16,7 +16,13 @@
     wiseli <module name> <npm command>
     wiseli install --save chalk
 
-![example run](images/npm-and-manpm.png)
+Example run `wiseli install chalk` - the NPM output is at the top, while
+the [example](https://github.com/chalk/chalk#chalkstylestylestring-string) 
+section from the readme is at the bottom.
+
+![example run](images/install-and-example.png)
+
+Implemented using [manpm](https://github.com/bahmutov/manpm)
 
 ### Small print
 
