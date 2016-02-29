@@ -22,7 +22,10 @@ section from the readme is at the bottom.
 ![example run](images/install-and-example.png)
 
 Implemented using [manpm](https://github.com/bahmutov/manpm) on top of 
-[blessed](https://github.com/chjj/blessed) and inspired by [gifi](https://github.com/vdemedes/gifi)
+[blessed](https://github.com/chjj/blessed) and inspired by 
+[gifi](https://github.com/vdemedes/gifi). You can read about my development
+process for this project in the blog post 
+[Developing Wiseli](https://glebbahmutov.com/blog/developing-wiseli/).
 
 ### Small print
 
