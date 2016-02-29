@@ -1,16 +1,30 @@
 {
-  "name": "try-split-screen",
+  "name": "wiseli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Read repo's example while installing it with NPM",
   "main": "index.js",
+  "dependencies": {
+    "chalk": "1.1.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "blessed": "0.1.81",
-    "cross-spawn-async": "2.1.9"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/wiseli.git"
+  },
+  "keywords": [
+    "npm",
+    "install",
+    "tool",
+    "example",
+    "term"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/wiseli/issues"
+  },
+  "homepage": "https://github.com/bahmutov/wiseli#readme"
 }
