@@ -1,8 +1,8 @@
 {
   "name": "wiseli",
   "description": "Read repo's example while installing it with NPM",
-  "version": "0.0.0-semantic-release",
   "main": "index.js",
+  "version": "0.0.0-semantic-release",
   "bin": {
     "wiseli": "index.js",
     "wisely": "index.js"
