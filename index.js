@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-function findModuleToInstall() {
+function findModuleToInstall () {
   var found
   process.argv.slice(2).forEach(function (arg) {
     if (arg !== 'i' &&
@@ -72,7 +72,7 @@ const manpmOutput = blessed.log({
 screen.append(npmOutput)
 screen.append(manpmOutput)
 
-screen.key(['escape', 'q', 'C-c'], function(ch, key) {
+screen.key(['escape', 'q', 'C-c'], function (ch, key) {
   process.exit(0)
 })
 
@@ -90,7 +90,9 @@ screen.render()
 }())
 
 ;(function () {
-  const proc = spawn(__dirname + '/node_modules/.bin/manpm', [name, 'example'])
+  const join = require('path').join
+  const manpmBin = join(__dirname, 'node_modules/.bin/manpm')
+  const proc = spawn(manpmBin, [name, 'example'])
   proc.stdout.on('data', (data) => {
     manpmOutput.add(data.toString())
   })
